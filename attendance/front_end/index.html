@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <style>
+        .container1{
+            display:flex;
+            flex-direction: column;
+            align-items:center;
+            justify-content:space-around;
+            width:100vw;
+            height:100vh;
+            background:url(employee1.jpg);
+            background-size:cover;
+            font-size: 10px;
+        }
+        .box1{
+          
+            height:50%;
+            width:35%;
+            border:2px solid red;
+            background: url(background1.jpg);
+            background-size:cover;
+
+            animation:swap;
+            animation-duration: 22s;
+            animation-timing-function:step-start ;
+            animation-delay:0s ;
+            animation-iteration-count:infinite ;
+            border-radius:200px;
+            box-shadow: 20px 20px 110px 70px rgb(71, 46, 71);
+
+            position:relative;
+            left:0;
+            top:0;
+           
+        }
+        .heading1{
+
+           width:100vw;
+            position:absolute;
+            top:50px;
+            text-align:center;
+            font-size: 30px;
+            color:blue;
+        }
+
+        .headings{
+            position:absolute;
+            left:50px;
+            top:280px;
+            font-size: 15px;
+            color:black;
+        }
+
+        .heading2{
+            
+             position:absolute;
+             text-align:center;
+             font-size: 25px;
+             color:blue;
+             bottom:60px;
+         }
+         
+         .heading2:hover{
+            color:rgb(255, 0, 8);
+         }
+
+        @keyframes swap{
+            0%  {
+                background-image: url(face1.jpg);
+                
+            }
+            10%  {
+                background-image: url(face2.jpg);
+            }
+            20%  {
+                background-image: url(face3.jpg);
+            }
+            30%  {
+                background-image: url(face4.jpg);
+            }
+            40%  {
+                background-image: url(face5.jpg);
+            }
+            50%  {
+                background-image: url(face6.jpg);
+            }
+            60%  {
+                background-image: url(face7.jpg);
+            }
+            70%  {
+                background-image: url(face8.jpg);
+            }
+            80%  {
+                background-image: url(face9.jpg);
+            }
+            90%  {
+                background-image: url(face10.jpg);
+            }
+           100%  {
+                background-image: url(face11.jpg);
+            }
+        }
+       
+    </style>
+</head>
+<body>
+    <!-- 👉 -->
+    <h2 class="heading1">Welcome to Smart Face Recognition Attendance System</h2>
+    <div class="container1"><div class="box1">  </div>
+    <a class="heading2" href="login.html">Login to Get Started</a> 
+<div class="headings">
+   <p>📸 Mark Your Attendance with Just a Look!</p>
+   <p>🔒 Secure, Fast & Contactless Attendance Management.</p>
+   <p>💼 Revolutionizing Workplace & Classroom Attendance with AI.</p>
+   <p>👤 No More Cards, No More Hassle – Your Face is Your Key!</p>
+</div> </div>
+    
+</body>
+</html>
