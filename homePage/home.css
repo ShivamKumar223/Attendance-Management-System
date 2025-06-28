@@ -32,6 +32,13 @@ body{
     cursor:pointer;
 }
 
+.title{
+  position:absolute;
+  top:40px;
+  left:70px;
+  color:white;
+}
+
 .menuBox{
     position:relative;
     left:-210px;
@@ -66,4 +73,46 @@ body{
     cursor:pointer ;
     text-decoration: underline;
     color:blue;
+}
+
+
+
+/*   Adoptive */
+/*@media screen and (min-width:340px)and (max-width: 355px) {
+  body {
+    
+        background-image: url("412x914.png");
+    background-size:cover;
+  }
+}*/
+
+@media screen and (min-width:355px)and (max-width: 375px) {
+  body {
+    
+        background-image: url("412x914.png");
+    background-size:cover;
+  }
+}
+
+@media screen and (min-width:375px) and (max-width: 376px) {
+  body {
+    
+    background-image: url("iPhone.jpg");
+    background-size:cover;
+  }
+}
+
+@media screen and (min-width:377px) and (max-width: 431px) {
+  body {
+    
+    background-image: url("412x914.png");
+    background-size:cover;
+  }
+}
+@media screen and (min-width:500px) and (max-width: 1125px) {
+  body {
+    
+    background-image: url("820x1180.png");
+    background-size:cover;
+  }
 }
