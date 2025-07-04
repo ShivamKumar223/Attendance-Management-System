@@ -9,7 +9,7 @@
 </head>
 <body>
     
-<div class="box1">
+<section class="box1">
       <h1 class="heading">Welcome to Attendance Management System</h1>
       <div class=" circle"></div>
       <img class="studentImg" src="./imageContainer/student.png" alt="Student">
@@ -24,15 +24,113 @@
         Dashboard
     </div>
 <div class="menuBox">
-        <form action="">
-            <button class="menuItems" id="minus1">Sign-up</button>
-            <button class="menuItems" id="minus2">Log-in</button>
-            <button class="menuItems" id="minus3">Contact Us</button>
-            <button class="menuItems" id="minus4">About Us</button>
-            <button class="menuItems" id="minus5">Help</button>
-        </form>
+    <div class="minus">
+            <a class="menuItems" id="minus1" href="#box2">Sign-up</a>
+            <a class="menuItems" id="minus2" href="#box3">Log-in</a>
+            <a class="menuItems" id="minus5" href="#box4">Help</a>
+             <a class="menuItems" id="minus4" href="#box5">About Us</a>
+            <a class="menuItems" id="minus3" href="#box5">Contact Us</a>
+           
+            
+    </div>    
+</section>
+
+
+         <!--   Sign up   --> 
+<section id="box2">
+
+<h1 id="signupHeading">Sign Up</h1>
+
+<div id="signupBox">
+    <form class="signup" action="#">
+    <label for="name"><input id="name" type="text" placeholder="Full Name"></label>
+    <label for="email"><input id="email" type="email" placeholder="Email"></label>
+    <label for="password"><input id="password" type="password" placeholder="Password"></label>
+    <label for="confirmPass"><input id="confirmPass" type="password" placeholder="Confirm Password"></label>
+    <button type="submit">Sign-up</button>
+    </form>
+    <img src="./imageContainer/signup.png" alt="signup pic" height="450px">
 </div>
 
+</section>
+
+        <!--   Log in   -->
+
+<section id="box3">
+
+<h1 id="loginHeading">Log in</h1>
+
+<div id="loginBox">
+    <form class="login" action="#">
+    <label for="email"><input id="email" type="email" placeholder="Email"></label>
+    <label for="pass"><input id="pass" type="password" placeholder="Password"></label>
+    <a id="forgot" href="#">forgot password?</a>
+    <button type="submit">Log in</button>
+    <div id="register"><p>Don't have an account?<a href="#box2">sign up</a></p></div>
+    </form>
+    <img src="./imageContainer/login.png" alt="login pic" >
+</div>
+
+</section>
+
+        <!--   Sign up   --> 
+<section id="box4">
+
+<h1 id="signupHeading">Help</h1>
+
+<div id="helpBox">
+    <form class="help" action="#">
+    <label for="name"><input id="name" type="text" placeholder="Full Name"></label>
+    <label for="num"><input id="num" type="number" placeholder="Mobile Number"></label>
+    <label for="email"><input id="email" type="email" placeholder="Email"></label>
+    <textarea id="issue" placeholder="Type your issues..." ></textarea>
+    
+    <button type="submit">Submit</button>
+    </form>
+    <img src="./imageContainer/help.png" alt="Help pic" width="500px">
+</div>
+
+</section>
+
+
+<footer id="box5">
+
+    <div id="aboutBox">
+        <h1 id="aboutHeading">About Us</h1>
+        <div id="aboutUs">
+            <ul>
+                <li>Shop Management</li>
+                <li>Restaurant Management</li>
+                <li>Hotel Management</li>
+                <li>Attendance Management</li>
+                
+            </ul>
+             <ul>
+                <li>Security</li>
+                <li>Scalibility</li>
+                <li>Flexibility</li>
+                <li>Reliability</li>
+                <li>Portability</li> 
+            </ul>
+        </div>
+        <h3>Why choose me</h3>
+        <p id="choose">With 3+ years of experience and 50+ successful projects, we ensure timely delivery,
+             clean code, and client satisfaction.Our goal is to become a leading software solutions provider in India and globally.</p>
+
+    </div>
+
+
+
+   <div id="contectBox">
+        <h1 id="contectHeading">Contect Us</h1>
+        <div id="contectUs">
+             <p>Mobile Number : +91 7366865889</p>
+             <p>Email  : shivam865889@gmail.com</p>
+        </div>
+      
+    </div>
+     
+</footer>
 
 <script src="home.js"></script>
 </body>
