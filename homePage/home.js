@@ -13,3 +13,16 @@ const menu = document.getElementsByClassName("menu");
     }
     movedRight = !movedRight; // toggle the state
   });
+
+  const minus1 = document.getElementById("minus1");
+  const signupBox = document.getElementById("box2");
+
+  minus1.addEventListener("click",()=>{
+    signupBox.style.display = "flex";
+  })
+
+  const registerAnchorTag = document.getElementById("registerAnchorTag");
+
+  registerAnchorTag.addEventListener("click",()=>{
+    signupBox.style.display="flex";
+  })

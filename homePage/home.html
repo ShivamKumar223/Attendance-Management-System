@@ -43,10 +43,10 @@
 
 <div id="signupBox">
     <form class="signup" action="#">
-    <label for="name"><input id="name" type="text" placeholder="Full Name"></label>
-    <label for="email"><input id="email" type="email" placeholder="Email"></label>
-    <label for="password"><input id="password" type="password" placeholder="Password"></label>
-    <label for="confirmPass"><input id="confirmPass" type="password" placeholder="Confirm Password"></label>
+    <label for="name"><input id="name" type="text" placeholder="Full Name" title="Enter your full name" required></label>
+    <label for="email"><input id="email" type="email" placeholder="Email" title="Enter your email" required></label>
+    <label for="password"><input id="password" type="password" placeholder="Password" pattern="[a-z]+[0-9]+[@,#,$,%,^,&,(,),_,]+.*" title="password pattern : [a-z] one or more + [0,9] one or more + spacial symbol + any character or number or spacial symbol" required></label>
+    <label for="confirmPass"><input id="confirmPass" type="password" placeholder="Confirm Password" title="Enter password again for conformation" required></label>
     <button type="submit">Sign-up</button>
     </form>
     <img id= "signupPic" src="./imageContainer/signup.png" alt="signup pic" height="450px">
@@ -62,11 +62,11 @@
 
 <div id="loginBox">
     <form class="login" action="#">
-    <label for="email"><input id="email" type="email" placeholder="Email"></label>
-    <label for="pass"><input id="pass" type="password" placeholder="Password"></label>
+    <label for="email"><input id="email" type="email" placeholder="Email" title="Enter your email" required></label>
+    <label for="pass"><input id="pass" type="password" placeholder="Password"   required></label>
     <a id="forgot" href="#">forgot password?</a>
     <button type="submit">Log in</button>
-    <div id="register"><p>Don't have an account?<a href="#box2">sign up</a></p></div>
+    <div id="register"><p>Don't have an account?<a id="registerAnchorTag" href="#box2" >sign up</a></p></div>
     </form>
     <img id="loginPic" src="./imageContainer/login.png" alt="login pic" >
 </div>
